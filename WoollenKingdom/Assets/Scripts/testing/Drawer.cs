@@ -43,7 +43,9 @@ public class Drawer : MonoBehaviour
 
         if(Input.GetMouseButtonDown(1))
         {
-            //calculates rotation
+            if(Player.wool > 0)
+            {
+                //calculates rotation
             float angle = Mathf.Atan2(endPos.y, startPos.x) * Mathf.Rad2Deg - 90;
             
             Quaternion angAxis = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -58,6 +60,8 @@ public class Drawer : MonoBehaviour
            Instantiate(prefab,posx,angAxis);
 
            Player.wool -= 1;
+            }
+            
         }
     }
 }
