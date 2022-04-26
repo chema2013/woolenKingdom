@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Player : MonoBehaviour
     Vector2 movement;
 
     public static int wool;
+
+    public Text woolText;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,8 @@ public class Player : MonoBehaviour
         verticalMovement = Input.GetAxisRaw("Vertical");
 
         movement = new Vector2(horizontalMovement, verticalMovement);
+
+        woolText.text = "Wool Supply:" + wool.ToString();
     }
 
     void FixedUpdate()

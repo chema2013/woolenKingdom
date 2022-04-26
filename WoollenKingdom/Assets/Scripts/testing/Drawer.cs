@@ -15,6 +15,8 @@ public class Drawer : MonoBehaviour
 
     public GameObject prefab;
 
+    public GameObject drawer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +44,7 @@ public class Drawer : MonoBehaviour
         if(Input.GetMouseButtonDown(1))
         {
             //calculates rotation
-            float angle = Mathf.Atan2(startPos.y, endPos.x) * Mathf.Rad2Deg - 90;
+            float angle = Mathf.Atan2(endPos.y, startPos.x) * Mathf.Rad2Deg - 90;
             
             Quaternion angAxis = Quaternion.AngleAxis(angle, Vector3.forward);
             Debug.Log("Angle:" + angle);
@@ -54,6 +56,8 @@ public class Drawer : MonoBehaviour
            Vector2 posx = Vector2.Lerp(pos1, pos2, 0.5f);
 
            Instantiate(prefab,posx,angAxis);
+
+           Player.wool -= 1;
         }
     }
 }
