@@ -48,11 +48,15 @@ public class IsoPlayerMovement : MonoBehaviour
 
         if(directionSprites != null) //holding direction
         {
-            sr.sprite = directionSprites[0]; //chose first sprite of sprite list
+            float playTime = Time.time - idleTime; //time since started moving
+            int totalFrames = (int)(playTime * frameRate); //total frames since started moving
+            int frame = totalFrames % directionSprites.Count; //current frame
+
+            sr.sprite = directionSprites[frame];
         }
         else
         {
-
+            idleTime = Time.time;
         }
     }
 
