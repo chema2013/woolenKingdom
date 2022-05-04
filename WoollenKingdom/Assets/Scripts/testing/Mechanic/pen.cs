@@ -32,6 +32,7 @@ public class pen : MonoBehaviour
             }
 
             GameObject dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent);
+            currentLine.AddPoint(dot.transform);
         }
     }
 
