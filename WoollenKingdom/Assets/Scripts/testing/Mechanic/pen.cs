@@ -40,14 +40,7 @@ public class pen : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0)){
             
-            if (currentLine == null)
-            {
-                currentLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
-
-            }
-
-            GameObject dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent);
-            currentLine.AddPoint(dot.transform);
+            
         }
     }
 

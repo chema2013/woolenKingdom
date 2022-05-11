@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System;
 
 public class PenCanvas : MonoBehaviour, IPointerClickHandler
 {
-    public AccelerationEvent OnPenCanvasLeftClickEvent;
+    public Action OnPenCanvasLeftClickEvent;
 
     public void OnPointerClick(PointerEventData eventData) {
         if (eventData.pointerId == -1) {
