@@ -22,7 +22,15 @@ public class pen : MonoBehaviour
     private void Start()
     {
         penCanvas.OnPenCanvasLeftClickEvent += AddDot;
+        penCanvas.OnPenCanvasRightClickEvent += EndCurrentLine;
     }
+
+    private void EndCurrentLine(){
+        if(currentLine != null){
+            currentLine = null;
+        }
+    }
+    
 
     private void AddDot() {
         if (currentLine == null)
@@ -31,17 +39,40 @@ public class pen : MonoBehaviour
 
             }
 
-            GameObject dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent);
-            currentLine.AddPoint(dot.transform);
+            DotController dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent).GetComponent<DotController>();
+            dot.OnDragEvent += MoveDot;
+            dot.OnRightClickEvent += RemoveDot;
+
+            currentLine.AddPoint(dot);
+    }
+
+   
+    private void RemoveDot(DotController dot) {
+        LineController line=dot.line;
+        line.SplitPointAtIndex(dot.index, out List<DotController> before, out List<DotController>after);
+
+        Destroy(line.gameObject);
+        Destroy(dot.gameObject);
+
+        LineController beforeLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
+        for(int i = 0; i < before.Count; i++) {
+            beforeLine.AddPoint(before[i]);
+        }
+
+        LineController afterLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
+        for(int i = 0; i < after.Count; i++) {
+            afterLine.AddPoint(after[i]);
+        }
+    }
+
+    private void MoveDot(DotController dot) {
+        dot.transform.position = GetMousePosition();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)){
-            
-            
-        }
+        
     }
 
     private Vector3 GetMousePosition(){
