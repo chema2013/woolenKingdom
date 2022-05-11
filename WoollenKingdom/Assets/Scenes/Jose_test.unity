@@ -1853,6 +1853,7 @@ GameObject:
   - component: {fileID: 1134435955}
   - component: {fileID: 1134435957}
   - component: {fileID: 1134435956}
+  - component: {fileID: 1134435958}
   m_Layer: 5
   m_Name: drawDetection
   m_TagString: Untagged
@@ -1917,6 +1918,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134435954}
   m_CullTransparentMesh: 1
+--- !u!114 &1134435958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134435954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fabfafbdb82993c48a60b3f15d4fe8b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1136519145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,7 +2669,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -117552511
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1463527593
 RectTransform:
@@ -4231,6 +4244,18 @@ PrefabInstance:
     - target: {fileID: 4795408594167343295, guid: faf2d75cff9a3254dbaddc708cc33382, type: 3}
       propertyPath: m_Name
       value: LinePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427399143848909359, guid: faf2d75cff9a3254dbaddc708cc33382, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427399143848909359, guid: faf2d75cff9a3254dbaddc708cc33382, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427399143848909359, guid: faf2d75cff9a3254dbaddc708cc33382, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -117552511
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf2d75cff9a3254dbaddc708cc33382, type: 3}

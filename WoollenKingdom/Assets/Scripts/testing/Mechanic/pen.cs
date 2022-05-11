@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class pen : MonoBehaviour
 {
+    [Header("Pen Canvas")]
+    [SerializeField] private PenCanvas penCanvas;
+
+
     [Header("Dots")]
     [SerializeField] private GameObject dotPrefab;
     [SerializeField] Transform dotParent;
@@ -15,9 +19,20 @@ public class pen : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        penCanvas.OnPenCanvasLeftClickEvent += AddDot;
+    }
+
+    private void AddDot() {
+        if (currentLine == null)
+            {
+                currentLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
+
+            }
+
+            GameObject dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent);
+            currentLine.AddPoint(dot.transform);
     }
 
     // Update is called once per frame
