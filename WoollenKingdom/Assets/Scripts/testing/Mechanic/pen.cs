@@ -31,7 +31,6 @@ public class pen : MonoBehaviour
     private void EndCurrentLine(){
         if(currentLine != null){
 
-            
             currentLine.ToggleLoop();
 
             currentLine = null;
@@ -54,7 +53,7 @@ public class pen : MonoBehaviour
 
             currentLine.AddPoint(dot);
 
-            Player.wool -= 1;
+            IsoPlayerMovement.wool -= 1;
     }
 
    
@@ -65,7 +64,7 @@ public class pen : MonoBehaviour
         Destroy(line.gameObject);
         Destroy(dot.gameObject);
 
-        Player.wool += 1;
+        IsoPlayerMovement.wool += 1;
 
         LineController beforeLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
         for(int i = 0; i < before.Count; i++) {

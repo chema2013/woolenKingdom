@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IsoPlayerMovement : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class IsoPlayerMovement : MonoBehaviour
     [SerializeField] bool isRight;
     float idleTime;
     #endregion
+
+    public static int wool;
+
+    public Text woolText;
 
     void Update()
     {
@@ -58,6 +63,8 @@ public class IsoPlayerMovement : MonoBehaviour
         {
             idleTime = Time.time;
         }
+
+        woolText.text = "Wool Supply:" + wool.ToString();
     }
 
     void FixedUpdate()
