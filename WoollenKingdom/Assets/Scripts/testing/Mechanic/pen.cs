@@ -18,6 +18,7 @@ public class pen : MonoBehaviour
     private LineController currentLine;
 
 
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -25,9 +26,17 @@ public class pen : MonoBehaviour
         penCanvas.OnPenCanvasRightClickEvent += EndCurrentLine;
     }
 
+    
+
     private void EndCurrentLine(){
         if(currentLine != null){
+
+            
+            currentLine.ToggleLoop();
+
             currentLine = null;
+
+            
         }
     }
     
@@ -44,6 +53,8 @@ public class pen : MonoBehaviour
             dot.OnRightClickEvent += RemoveDot;
 
             currentLine.AddPoint(dot);
+
+            Player.wool -= 1;
     }
 
    
@@ -53,6 +64,8 @@ public class pen : MonoBehaviour
 
         Destroy(line.gameObject);
         Destroy(dot.gameObject);
+
+        Player.wool += 1;
 
         LineController beforeLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
         for(int i = 0; i < before.Count; i++) {

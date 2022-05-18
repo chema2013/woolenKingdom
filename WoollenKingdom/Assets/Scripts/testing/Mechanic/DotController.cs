@@ -17,15 +17,20 @@ public class DotController : MonoBehaviour, IDragHandler, IPointerClickHandler
     }
 
     public Action<DotController> OnRightClickEvent;
+    public Action<DotController> OnLeftClickEvent;
 
     public void OnPointerClick(PointerEventData eventData) {
         if(eventData.pointerId == -2) {
             OnRightClickEvent?.Invoke(this);
         }
+        else if (eventData.pointerId == -1) {
+            OnLeftClickEvent?.Invoke(this);
+        }
     }
 
     public void SetLine(LineController line) {
         this.line = line;
+        
     }
 
     // Start is called before the first frame update
