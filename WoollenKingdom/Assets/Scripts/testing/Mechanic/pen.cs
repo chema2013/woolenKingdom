@@ -18,6 +18,7 @@ public class pen : MonoBehaviour
     private LineController currentLine;
 
 
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -25,9 +26,17 @@ public class pen : MonoBehaviour
         penCanvas.OnPenCanvasRightClickEvent += EndCurrentLine;
     }
 
+    
+
     private void EndCurrentLine(){
         if(currentLine != null){
+
+            
+            currentLine.ToggleLoop();
+
             currentLine = null;
+
+            
         }
     }
     

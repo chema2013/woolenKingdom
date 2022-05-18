@@ -7,6 +7,7 @@ public class LineController : MonoBehaviour
     private LineRenderer lr;
     private List<DotController> dots;
 
+
     private void Awake() {
         lr = GetComponent<LineRenderer>();
         lr.positionCount = 0;
@@ -17,6 +18,8 @@ public class LineController : MonoBehaviour
     public void AddPoint(DotController dot) {
         dot.index = dots.Count;
         dot.SetLine(this);
+
+        
 
         lr.positionCount++;
         dots.Add(dot);
@@ -42,6 +45,8 @@ public class LineController : MonoBehaviour
     public void ToggleLoop() {
         lr.loop = !lr.loop;
     }
+
+
 
     public bool islooped(){
         return lr.loop;
