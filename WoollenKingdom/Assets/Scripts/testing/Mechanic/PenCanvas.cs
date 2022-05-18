@@ -10,7 +10,7 @@ public class PenCanvas : MonoBehaviour, IPointerClickHandler
     public Action OnPenCanvasRightClickEvent;
 
     public void OnPointerClick(PointerEventData eventData) {
-        if (eventData.pointerId == -1) {
+        if (eventData.pointerId == -1 && Player.wool > 0) {
             OnPenCanvasLeftClickEvent?.Invoke();
         }
         else if (eventData.pointerId == -2)

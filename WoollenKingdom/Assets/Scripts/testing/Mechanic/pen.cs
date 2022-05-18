@@ -44,6 +44,8 @@ public class pen : MonoBehaviour
             dot.OnRightClickEvent += RemoveDot;
 
             currentLine.AddPoint(dot);
+
+            Player.wool -= 1;
     }
 
    
@@ -53,6 +55,8 @@ public class pen : MonoBehaviour
 
         Destroy(line.gameObject);
         Destroy(dot.gameObject);
+
+        Player.wool += 1;
 
         LineController beforeLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
         for(int i = 0; i < before.Count; i++) {
