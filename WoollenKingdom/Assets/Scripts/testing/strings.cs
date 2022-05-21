@@ -20,11 +20,11 @@ public class strings : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-          int source = Player.wool;
+          int source = IsoPlayerMovement.wool;
 
-          Player.wool += 1;
+          IsoPlayerMovement.wool += 1;
 
-          Debug.Log(Player.wool);
+          Debug.Log(IsoPlayerMovement.wool);
 
           Destroy(gameObject);
         }

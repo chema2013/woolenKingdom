@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class pen : MonoBehaviour
 {
+    [Header("Pen Canvas")]
+    [SerializeField] private PenCanvas penCanvas;
+
+
     [Header("Dots")]
     [SerializeField] private GameObject dotPrefab;
     [SerializeField] Transform dotParent;
@@ -14,26 +18,73 @@ public class pen : MonoBehaviour
     private LineController currentLine;
 
 
+
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        penCanvas.OnPenCanvasLeftClickEvent += AddDot;
+        penCanvas.OnPenCanvasRightClickEvent += EndCurrentLine;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0)){
+    
+
+    private void EndCurrentLine(){
+        if(currentLine != null){
+
+            currentLine.ToggleLoop();
+
+            currentLine = null;
+
             
-            if (currentLine == null)
+        }
+    }
+    
+
+    private void AddDot() {
+        if (currentLine == null)
             {
                 currentLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
 
             }
 
-            GameObject dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent);
-            currentLine.AddPoint(dot.transform);
+            DotController dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent).GetComponent<DotController>();
+            dot.OnDragEvent += MoveDot;
+            dot.OnRightClickEvent += RemoveDot;
+
+            currentLine.AddPoint(dot);
+
+            IsoPlayerMovement.wool -= 1;
+    }
+
+   
+    private void RemoveDot(DotController dot) {
+        LineController line=dot.line;
+        line.SplitPointAtIndex(dot.index, out List<DotController> before, out List<DotController>after);
+
+        Destroy(line.gameObject);
+        Destroy(dot.gameObject);
+
+        IsoPlayerMovement.wool += 1;
+
+        LineController beforeLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
+        for(int i = 0; i < before.Count; i++) {
+            beforeLine.AddPoint(before[i]);
         }
+
+        LineController afterLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity, lineParent).GetComponent<LineController>();
+        for(int i = 0; i < after.Count; i++) {
+            afterLine.AddPoint(after[i]);
+        }
+    }
+
+    private void MoveDot(DotController dot) {
+        dot.transform.position = GetMousePosition();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 
     private Vector3 GetMousePosition(){
