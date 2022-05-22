@@ -177,7 +177,7 @@ PrefabInstance:
     - target: {fileID: 6747295493801198703, guid: 7d46fcc1836ee6542ab4f171aee9bf27, type: 3}
       propertyPath: m_Follow
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 979645024}
     - target: {fileID: 6747295493801198704, guid: 7d46fcc1836ee6542ab4f171aee9bf27, type: 3}
       propertyPath: m_Name
       value: CM vcam1
@@ -241,6 +241,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+--- !u!4 &979645024 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3735380836465145462, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+  m_PrefabInstance: {fileID: 979645023}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1058909557
 GameObject:
   m_ObjectHideFlags: 0
