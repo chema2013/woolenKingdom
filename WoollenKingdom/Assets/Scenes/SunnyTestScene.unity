@@ -2117,6 +2117,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1248672294}
   speed: 2
+  anim: {fileID: 0}
+  idleAnims:
+  - Kid_Idle_Front
+  - Kid_Idle_Front_Right
+  - Kid_Idle_Right
+  - Kid_Idle_Back_Right
+  - Kid_Idle_Back
+  - Kid_Idle_Back_Left
+  - Kid_Idle_Left
+  - Kid_Idle_Front_Left
   sr: {fileID: 1248672292}
   frontSprite:
   - {fileID: 4644841980727008197, guid: f08cd4814c1b0574290179f073761393, type: 3}
@@ -5989,7 +5999,7 @@ PrefabInstance:
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: frontSprite.Array.data[2]
       value: 
-      objectReference: {fileID: -5132748944767479256, guid: 9d34f09b3ed58e0478dbe52f2b3466cc, type: 3}
+      objectReference: {fileID: -3910905391722646769, guid: 9d34f09b3ed58e0478dbe52f2b3466cc, type: 3}
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: frontSprite.Array.data[3]
       value: 
@@ -6005,7 +6015,7 @@ PrefabInstance:
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: frontSprite.Array.data[6]
       value: 
-      objectReference: {fileID: 7896999444235273669, guid: 9d34f09b3ed58e0478dbe52f2b3466cc, type: 3}
+      objectReference: {fileID: -7799269813433048361, guid: 9d34f09b3ed58e0478dbe52f2b3466cc, type: 3}
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: frontSprite.Array.data[7]
       value: 
@@ -6013,7 +6023,7 @@ PrefabInstance:
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: frontSprite.Array.data[8]
       value: 
-      objectReference: {fileID: -2634415345202986662, guid: 9d34f09b3ed58e0478dbe52f2b3466cc, type: 3}
+      objectReference: {fileID: -7799269813433048361, guid: 9d34f09b3ed58e0478dbe52f2b3466cc, type: 3}
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: frontSprite.Array.data[9]
       value: 
@@ -6289,6 +6299,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3735380836465145462, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
   m_PrefabInstance: {fileID: 2015383507}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2015383509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3735380836465145456, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+  m_PrefabInstance: {fileID: 2015383507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2015383510
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015383509}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91fe8cb5b613f55448c3e6b0bf319b68, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2040863916
 PrefabInstance:
   m_ObjectHideFlags: 0
