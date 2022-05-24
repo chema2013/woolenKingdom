@@ -2517,10 +2517,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1869779344}
+    - target: {fileID: 3735380836293662357, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -42407469
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836465145461, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836465145461, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 676056011
+      objectReference: {fileID: 0}
     - target: {fileID: 3735380836581847712, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1869779344}
+    - target: {fileID: 3735380836581847712, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -42407469
+      objectReference: {fileID: 0}
     - target: {fileID: 5417224100340165888, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Name
       value: Player&Mechanic
