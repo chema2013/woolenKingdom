@@ -30,6 +30,8 @@ public class pen : MonoBehaviour
 
         //disables polugoncollider2d
         this.GetComponent<PolygonCollider2D>().enabled = false;
+
+        col = this.GetComponent<PolygonCollider2D>();
     }
 
     
@@ -44,7 +46,13 @@ public class pen : MonoBehaviour
             currentLine = null;
 
             this.GetComponent<PolygonCollider2D>().enabled = true;
-            
+
+            Vector2 point1 = new Vector2(1,1);
+            Vector2 point2 = new Vector2(0,1);
+            Vector2 point3 = new Vector2(0,0);
+            Vector2 point4 = new Vector2(1,0);
+
+            this.GetComponent<PolygonCollider2D>().points = new[]{point1,point2,point3,point4};
         }
     }
     
