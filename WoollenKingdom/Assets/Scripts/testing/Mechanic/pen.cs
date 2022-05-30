@@ -17,24 +17,33 @@ public class pen : MonoBehaviour
     [SerializeField] Transform lineParent;
     private LineController currentLine;
 
+    private Component col;
+
 
 
     // Start is called before the first frame update
     private void Start()
     {
+        //adds different events the player will be able to activate depending on the button they press
         penCanvas.OnPenCanvasLeftClickEvent += AddDot;
         penCanvas.OnPenCanvasRightClickEvent += EndCurrentLine;
+
+        //disables polugoncollider2d
+        this.GetComponent<PolygonCollider2D>().enabled = false;
     }
 
     
-
+    //This event is activated once the right click is pressed
     private void EndCurrentLine(){
         if(currentLine != null){
 
+            //completes the shape the player is drawing
             currentLine.ToggleLoop();
 
+            //they can no longer add more lines to the shape they created
             currentLine = null;
 
+            this.GetComponent<PolygonCollider2D>().enabled = true;
             
         }
     }
