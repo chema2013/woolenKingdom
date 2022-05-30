@@ -3523,13 +3523,61 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrawingCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662356, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3735380836293662357, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1869779344}
     - target: {fileID: 3735380836293662357, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662357, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_SortingLayerID
       value: -42407469
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836465145461, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_SortingLayer

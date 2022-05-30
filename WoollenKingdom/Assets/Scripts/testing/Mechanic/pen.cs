@@ -19,6 +19,18 @@ public class pen : MonoBehaviour
 
     private Component col;
 
+    private Vector2[] vects;
+
+    private Vector2 point1;
+
+    private Vector2 point2;
+
+    private Vector2 point3;
+
+    private Vector2 point4;
+
+    int i=1;
+
 
 
     // Start is called before the first frame update
@@ -47,11 +59,6 @@ public class pen : MonoBehaviour
 
             this.GetComponent<PolygonCollider2D>().enabled = true;
 
-            Vector2 point1 = new Vector2(1,1);
-            Vector2 point2 = new Vector2(0,1);
-            Vector2 point3 = new Vector2(0,0);
-            Vector2 point4 = new Vector2(1,0);
-
             this.GetComponent<PolygonCollider2D>().points = new[]{point1,point2,point3,point4};
         }
     }
@@ -67,6 +74,34 @@ public class pen : MonoBehaviour
             DotController dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent).GetComponent<DotController>();
             dot.OnDragEvent += MoveDot;
             dot.OnRightClickEvent += RemoveDot;
+
+                if (i == 1)
+                {
+                    point1 = GetMousePosition();
+
+                    Debug.Log(point1);
+
+                }
+                if (i == 2)
+                {
+                    point2 = GetMousePosition();
+
+                    Debug.Log(point2);
+                }
+                if (i == 3)
+                {
+                    point3 = GetMousePosition();
+
+                    Debug.Log(point3);
+                }
+                if (i == 4)
+                {
+                    point4 = GetMousePosition();
+
+                    Debug.Log(point4);
+                }
+
+            i++;
 
             currentLine.AddPoint(dot);
 
