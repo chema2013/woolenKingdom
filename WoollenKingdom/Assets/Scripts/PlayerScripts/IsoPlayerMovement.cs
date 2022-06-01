@@ -75,6 +75,7 @@ public class IsoPlayerMovement : MonoBehaviour
             isRight = true;
         }
 
+        #region Sprite Behaviour
         List<Sprite> directionSprites = GetSpriteDirection();
         string[] directionArray = null;
 
@@ -94,13 +95,17 @@ public class IsoPlayerMovement : MonoBehaviour
             anim.enabled = true;
             anim.Play(directionArray[lastDirection]);
         }
+        #endregion
 
         woolText.text = "Wool Supply:" + wool.ToString();
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
+        if(canMove)
+        {
+            rb.MovePosition(rb.position + movement.normalized * speed * Time.fixedDeltaTime);
+        }
     }
 
     //the lastDirection number is taken & when the player is no longer pressing down, thar idle animation plays; THAT'S why there is a delay in animation play
