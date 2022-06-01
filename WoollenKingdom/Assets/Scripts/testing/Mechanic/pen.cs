@@ -77,26 +77,26 @@ public class pen : MonoBehaviour
 
                 if (i == 1)
                 {
-                    point1 = GetMousePosition();
+                    point1 = GetMousePosition() * 63.5f;
 
                     Debug.Log(point1);
 
                 }
                 if (i == 2)
                 {
-                    point2 = GetMousePosition();
+                    point2 = GetMousePosition() * 63.5f;
 
                     Debug.Log(point2);
                 }
                 if (i == 3)
                 {
-                    point3 = GetMousePosition();
+                    point3 = GetMousePosition() * 63.5f;
 
                     Debug.Log(point3);
                 }
                 if (i == 4)
                 {
-                    point4 = GetMousePosition();
+                    point4 = GetMousePosition() * 63.5f;
 
                     Debug.Log(point4);
                 }
