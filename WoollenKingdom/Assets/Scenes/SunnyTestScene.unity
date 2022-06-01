@@ -2269,6 +2269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1248672294}
   speed: 2
+  canMove: 0
+  textBox: {fileID: 0}
   anim: {fileID: 0}
   idleAnims:
   - Kid_Idle_Front
@@ -3750,6 +3752,7 @@ MonoBehaviour:
   - Hey there!
   - I don't believe I've introduced myself.
   - But now I'm finally able to do so!
+  wordSpeed: 0.01
 --- !u!1 &1702421860
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,6 +6322,10 @@ PrefabInstance:
       propertyPath: anim
       value: 
       objectReference: {fileID: 2015383509}
+    - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 1072065039}
     - target: {fileID: 5417224100340165888, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Name
       value: Player&Mechanic

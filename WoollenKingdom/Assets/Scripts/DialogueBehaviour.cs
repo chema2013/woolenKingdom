@@ -33,10 +33,14 @@ public class DialogueBehaviour : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return))
+        if(dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) // if text has finished typing
         {
             NextLine();
         }
+        /*else // the way typing works with the current set up does not allow for text skipping. it simply restarts typing the same letters in an element within itself
+        {
+            dialogueText.text = dialogue[index]; // set text to finish
+        }*/
     }
 
     IEnumerator Typing()

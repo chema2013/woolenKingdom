@@ -12,6 +12,8 @@ public class IsoPlayerMovement : MonoBehaviour
     Vector2 movement;
     public bool canMove = true;
 
+    public GameObject textBox;
+
     #region Animations
     public Animator anim;                  //0,                    1,                      2,                  3,                  4,                  5,                  6,                  7
     public string[] idleAnims = { "Kid_Idle_Front", "Kid_Idle_Front_Right", "Kid_Idle_Right", "Kid_Idle_Back_Right", "Kid_Idle_Back", "Kid_Idle_Back_Left", "Kid_Idle_Left", "Kid_Idle_Front_Left" };
@@ -45,7 +47,16 @@ public class IsoPlayerMovement : MonoBehaviour
         canMove = true;
     }
     void Update()
-    {
+    {   
+        if(textBox.activeInHierarchy)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
+        }
+
         if(canMove)
         {
             horizontalMovement = Input.GetAxis("Horizontal");
