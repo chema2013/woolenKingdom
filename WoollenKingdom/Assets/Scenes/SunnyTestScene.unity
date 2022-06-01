@@ -549,6 +549,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &367074547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 367074547, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
+  m_PrefabInstance: {fileID: 7068750111644350512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,6 +6201,10 @@ PrefabInstance:
       propertyPath: textBox
       value: 
       objectReference: {fileID: 1072065039}
+    - target: {fileID: 7068750110447145674, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
+      propertyPath: buttonPrompt
+      value: 
+      objectReference: {fileID: 367074547}
     - target: {fileID: 7068750110447145674, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: dialogueText
       value: 

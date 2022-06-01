@@ -12,6 +12,7 @@ public class DialogueBehaviour : MonoBehaviour
     int index;
     float wordSpeed = 0.01f;
     bool playerIsClose;
+    public GameObject buttonPrompt;
 
     void Start()
     {
@@ -20,20 +21,17 @@ public class DialogueBehaviour : MonoBehaviour
 
     void Update()
     {
-        if(playerIsClose)
-        {   
-            
-            if(Input.GetKeyDown(KeyCode.E))
+        if (playerIsClose && Input.GetKeyDown(KeyCode.E))
+        {
+            if (textBox.activeInHierarchy)
             {
-                if(textBox.activeInHierarchy)
-                {
-                    ResetText();
-                }
-                else
-                {
-                    textBox.SetActive(true);
-                    StartCoroutine(Typing());
-                }
+                ResetText();
+            }
+            else
+            {
+                buttonPrompt.gameObject.SetActive(false);
+                textBox.SetActive(true);
+                StartCoroutine(Typing());
             }
         }
 
@@ -83,6 +81,7 @@ public class DialogueBehaviour : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             playerIsClose = true;
+            buttonPrompt.gameObject.SetActive(true);
         }
     }
 
@@ -91,6 +90,7 @@ public class DialogueBehaviour : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerIsClose = false;
+            buttonPrompt.gameObject.SetActive(false);
             ResetText();
         }
     }
