@@ -20,16 +20,20 @@ public class DialogueBehaviour : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && playerIsClose)
-        {
-            if(textBox.activeInHierarchy)
+        if(playerIsClose)
+        {   
+            
+            if(Input.GetKeyDown(KeyCode.E))
             {
-                ResetText();
-            }
-            else
-            {
-                textBox.SetActive(true);
-                StartCoroutine(Typing());
+                if(textBox.activeInHierarchy)
+                {
+                    ResetText();
+                }
+                else
+                {
+                    textBox.SetActive(true);
+                    StartCoroutine(Typing());
+                }
             }
         }
 
