@@ -1334,7 +1334,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3519,9 +3519,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3735380834758164804, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380835576566995, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380835588378787, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3735380836293662354, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Name
       value: DrawingCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662354, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836293662356, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -3537,7 +3553,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836293662357, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_SortingLayerID
-      value: -42407469
+      value: -117552511
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836293662358, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Pivot.x
@@ -3579,13 +3595,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3735380836293662359, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 584255354}
+    - target: {fileID: 3735380836371171931, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836391224442, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836465145456, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3735380836465145461, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836465145461, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_SortingLayerID
-      value: 676056011
+      value: -117552511
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836581847712, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Camera

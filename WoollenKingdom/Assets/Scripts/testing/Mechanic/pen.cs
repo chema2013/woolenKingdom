@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class pen : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class pen : MonoBehaviour
     private Vector2 point4;
 
     int i=1;
+
+    public GameObject obstacle;
 
 
 
@@ -137,6 +140,26 @@ public class pen : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OnTriggerEnter2D (Collider2D col)
+    {
+        if(col.gameObject.tag == "Player")
+        {
+            obstacle.GetComponent<TilemapCollider2D>().enabled = false;
+
+            Debug.Log("hey");
+        }
+    }
+
+    public void OnTriggerExit2D (Collider2D col)
+    {
+        if(col.gameObject.tag == "Player")
+        {
+            obstacle.GetComponent<TilemapCollider2D>().enabled = true;
+
+            Debug.Log("closed");
+        }
     }
 
     private Vector3 GetMousePosition(){
