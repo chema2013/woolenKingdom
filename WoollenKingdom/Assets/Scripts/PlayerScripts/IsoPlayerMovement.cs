@@ -10,10 +10,13 @@ public class IsoPlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public float speed = 2f;
     Vector2 movement;
+    public bool canMove = true;
 
+    #region Animations
     public Animator anim;                  //0,                    1,                      2,                  3,                  4,                  5,                  6,                  7
     public string[] idleAnims = { "Kid_Idle_Front", "Kid_Idle_Front_Right", "Kid_Idle_Right", "Kid_Idle_Back_Right", "Kid_Idle_Back", "Kid_Idle_Back_Left", "Kid_Idle_Left", "Kid_Idle_Front_Left" };
     int lastDirection; //using number as index for which animation was last played
+    #endregion
 
     #region Sprites
     public SpriteRenderer sr;
@@ -38,14 +41,18 @@ public class IsoPlayerMovement : MonoBehaviour
 
     void Awake()
     {
-        anim = GetComponent<Animator>(); 
+        anim = GetComponent<Animator>();
+        canMove = true;
     }
     void Update()
     {
-        horizontalMovement = Input.GetAxis("Horizontal");
-        verticalMovement = Input.GetAxis("Vertical");
+        if(canMove)
+        {
+            horizontalMovement = Input.GetAxis("Horizontal");
+            verticalMovement = Input.GetAxis("Vertical");
 
-        movement = new Vector2(horizontalMovement, verticalMovement);
+            movement = new Vector2(horizontalMovement, verticalMovement);
+        }
 
         //if facing right & player holds left, flip
         if(isRight && movement.x < 0)
@@ -76,7 +83,6 @@ public class IsoPlayerMovement : MonoBehaviour
             anim.enabled = true;
             anim.Play(directionArray[lastDirection]);
         }
-
 
         woolText.text = "Wool Supply:" + wool.ToString();
     }
