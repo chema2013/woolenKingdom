@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: textBox
+      value: 
+      objectReference: {fileID: 1706218620}
     - target: {fileID: 8114324111642067563, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Name
       value: Player&Mechanic
@@ -2714,3 +2718,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8fda6fa77d8de943b4907955e9c974d, type: 3}
+--- !u!1 &1706218620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1072065039, guid: e8fda6fa77d8de943b4907955e9c974d, type: 3}
+  m_PrefabInstance: {fileID: 1706218619}
+  m_PrefabAsset: {fileID: 0}

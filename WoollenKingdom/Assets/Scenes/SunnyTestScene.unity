@@ -5908,32 +5908,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 2015383509}
-    - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: textBox
       value: 
       objectReference: {fileID: 1072065039}
-    - target: {fileID: 3735380836465145461, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5417224100340165888, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Name
       value: Player&Mechanic
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3735380836465145460, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
 --- !u!4 &2015383508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3735380836465145462, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
-  m_PrefabInstance: {fileID: 2015383507}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2015383509 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2015383510, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
   m_PrefabInstance: {fileID: 2015383507}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2040863916

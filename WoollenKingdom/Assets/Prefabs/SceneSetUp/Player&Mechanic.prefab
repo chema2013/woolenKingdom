@@ -1928,7 +1928,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3735380836465145462}
   - component: {fileID: 3735380836465145461}
-  - component: {fileID: 3735380836465145460}
   - component: {fileID: 3735380836465145459}
   - component: {fileID: 3735380836465145458}
   - component: {fileID: 3735380836465145457}
@@ -1993,7 +1992,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -117552511
   m_SortingLayer: 6
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 4644841980727008197, guid: f08cd4814c1b0574290179f073761393, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2005,21 +2004,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3735380836465145460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3735380836465145456}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 685efda0dc27d0747a50113916224541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 3735380836465145458}
-  speed: 2
-  woolText: {fileID: 0}
 --- !u!114 &3735380836465145459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,7 +2018,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 3735380836465145458}
   speed: 2
-  anim: {fileID: 0}
+  canMove: 1
+  textBox: {fileID: 0}
+  anim: {fileID: 2015383510}
   idleAnims:
   - Kid_Idle_Front
   - Kid_Idle_Front_Right
