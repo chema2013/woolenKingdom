@@ -39,7 +39,7 @@ public class DialogueBehaviour : MonoBehaviour
         {
             NextLine();
         }
-        /*else // the way typing works with the current set up does not allow for text skipping. it simply restarts typing the same letters in an element within itself
+        /*else if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return)) // the way typing works with the current set up does not allow for text skipping. it simply restarts typing the same letters in an element within itself
         {
             dialogueText.text = dialogue[index]; // set text to finish
         }*/
