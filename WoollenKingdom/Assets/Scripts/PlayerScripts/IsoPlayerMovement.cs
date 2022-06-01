@@ -79,7 +79,15 @@ public class IsoPlayerMovement : MonoBehaviour
         List<Sprite> directionSprites = GetSpriteDirection();
         string[] directionArray = null;
 
-        if(directionSprites != null) //holding direction
+        if(directionSprites != null && textBox.activeInHierarchy) //if input is being detected && text box is active 
+        {
+            idleTime = Time.time;
+            directionArray = idleAnims; //if no movement detected use idle anims
+            anim.enabled = true;
+            anim.Play(directionArray[lastDirection]);
+            
+        }
+        else if(directionSprites != null) //holding direction
         {
             float playTime = Time.time - idleTime; //time since started moving
             int totalFrames = (int)(playTime * frameRate); //total frames since started moving
