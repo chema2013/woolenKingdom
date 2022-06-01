@@ -10,7 +10,7 @@ public class DialogueBehaviour : MonoBehaviour
     public TMP_Text dialogueText;
     public string[] dialogue;
     int index;
-    public float wordSpeed;
+    float wordSpeed = 0.01f;
     bool playerIsClose;
 
     void Start()
