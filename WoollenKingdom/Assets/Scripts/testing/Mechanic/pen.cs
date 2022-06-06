@@ -30,6 +30,10 @@ public class pen : MonoBehaviour
 
     private Vector2 point4;
 
+    private Vector2 point5;
+
+    private Vector2 point6;
+
     int i=1;
 
     public GameObject obstacle;
@@ -60,7 +64,7 @@ public class pen : MonoBehaviour
 
             this.GetComponent<PolygonCollider2D>().enabled = true;
 
-            this.GetComponent<PolygonCollider2D>().points = new[]{point1,point2,point3,point4};
+            this.GetComponent<PolygonCollider2D>().points = new[]{point1,point2,point3,point4,point5,point6};
 
             i = 1;
         }
@@ -102,6 +106,18 @@ public class pen : MonoBehaviour
                     point4 = GetMousePosition() * 1f;
 
                     Debug.Log(point4);
+                }
+                if (i == 5)
+                {
+                    point4 = GetMousePosition() * 1f;
+
+                    Debug.Log(point5);
+                }
+                if (i == 6)
+                {
+                    point4 = GetMousePosition() * 1f;
+
+                    Debug.Log(point6);
                 }
 
             i++;
