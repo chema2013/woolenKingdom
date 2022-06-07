@@ -17,9 +17,13 @@ public class CompleteNpc : MonoBehaviour
 
     bool minigame = false;
 
+    public GameObject drawingNPC;
+
+    public GameObject drawingWorld;
+
     void Start()
     {
-        
+        drawingNPC.SetActive(false);
     }
 
     void Update()
@@ -31,6 +35,8 @@ public class CompleteNpc : MonoBehaviour
             player.GetComponent<SpriteRenderer>().enabled = false;
             minigame = true;
             player.GetComponent<IsoPlayerMovement>().enabled = false;
+            drawingNPC.SetActive(true);
+            drawingWorld.SetActive(false);
 
             Debug.Log(minigame);
         }
@@ -40,6 +46,8 @@ public class CompleteNpc : MonoBehaviour
             camera.GetComponent<Camera>().orthographicSize = zoomSize;
             player.GetComponent<SpriteRenderer>().enabled = true;
             player.GetComponent<IsoPlayerMovement>().enabled = true;
+            drawingNPC.SetActive(false);
+            drawingWorld.SetActive(true);
 
             Debug.Log(minigame);
         }
