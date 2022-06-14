@@ -36,7 +36,7 @@ public class pen : MonoBehaviour
 
     int i=1;
 
-    public GameObject obstacle;
+    public GameObject[] obstacle;
 
 
 
@@ -162,7 +162,8 @@ public class pen : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            obstacle.GetComponent<TilemapCollider2D>().enabled = false;
+            
+            obstacle[1].GetComponent<TilemapCollider2D>().enabled = false;
 
             Debug.Log("crossing bridge");
         }
@@ -172,7 +173,7 @@ public class pen : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            obstacle.GetComponent<TilemapCollider2D>().enabled = true;
+            obstacle[1].GetComponent<TilemapCollider2D>().enabled = true;
 
             Debug.Log("closed");
         }
