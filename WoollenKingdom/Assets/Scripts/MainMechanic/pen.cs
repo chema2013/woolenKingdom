@@ -18,7 +18,7 @@ public class pen : MonoBehaviour
     [SerializeField] Transform lineParent;
     private LineController currentLine;
 
-    private Component col;
+    public GameObject poly;
 
     private Vector2[] vects;
 
@@ -30,9 +30,13 @@ public class pen : MonoBehaviour
 
     private Vector2 point4;
 
+    private Vector2 point5;
+
+    private Vector2 point6;
+
     int i=1;
 
-    public GameObject obstacle;
+    public GameObject[] obstacle;
 
 
 
@@ -45,8 +49,6 @@ public class pen : MonoBehaviour
 
         //disables polugoncollider2d
         this.GetComponent<PolygonCollider2D>().enabled = false;
-
-        col = this.GetComponent<PolygonCollider2D>();
     }
 
     
@@ -62,7 +64,9 @@ public class pen : MonoBehaviour
 
             this.GetComponent<PolygonCollider2D>().enabled = true;
 
-            this.GetComponent<PolygonCollider2D>().points = new[]{point1,point2,point3,point4};
+            this.GetComponent<PolygonCollider2D>().points = new[]{point1,point2,point3,point4,point5,point6};
+
+            i = 1;
         }
     }
     
@@ -80,28 +84,40 @@ public class pen : MonoBehaviour
 
                 if (i == 1)
                 {
-                    point1 = GetMousePosition() * 63.5f;
+                    point1 = GetMousePosition() * 1f;
 
                     Debug.Log(point1);
 
                 }
                 if (i == 2)
                 {
-                    point2 = GetMousePosition() * 63.5f;
+                    point2 = GetMousePosition() * 1f;
 
                     Debug.Log(point2);
                 }
                 if (i == 3)
                 {
-                    point3 = GetMousePosition() * 63.5f;
+                    point3 = GetMousePosition() * 1f;
 
                     Debug.Log(point3);
                 }
                 if (i == 4)
                 {
-                    point4 = GetMousePosition() * 63.5f;
+                    point4 = GetMousePosition() * 1f;
 
                     Debug.Log(point4);
+                }
+                if (i == 5)
+                {
+                    point4 = GetMousePosition() * 1f;
+
+                    Debug.Log(point5);
+                }
+                if (i == 6)
+                {
+                    point4 = GetMousePosition() * 1f;
+
+                    Debug.Log(point6);
                 }
 
             i++;
@@ -146,9 +162,12 @@ public class pen : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            obstacle.GetComponent<TilemapCollider2D>().enabled = false;
+            int maxNum = obstacle.Length;
+            for(int i = 0; i < maxNum; i++) {
+            obstacle[i].GetComponent<TilemapCollider2D>().enabled = false;
+        }
 
-            Debug.Log("hey");
+            Debug.Log("crossing bridge");
         }
     }
 
@@ -156,7 +175,10 @@ public class pen : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            obstacle.GetComponent<TilemapCollider2D>().enabled = true;
+            int maxNum = obstacle.Length;
+            for(int i = 0; i < maxNum; i++) {
+            obstacle[i].GetComponent<TilemapCollider2D>().enabled = true;
+        }
 
             Debug.Log("closed");
         }
