@@ -30750,10 +30750,90 @@ PrefabInstance:
       propertyPath: obstacle.Array.data[3]
       value: 
       objectReference: {fileID: 2126528457}
+    - target: {fileID: 3735380836298344346, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3735380836465145459, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: textBox
       value: 
       objectReference: {fileID: 580598724}
+    - target: {fileID: 3735380836581847712, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_RenderMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847712, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847712, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_TargetDisplay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847712, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -117552511
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 640
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 34.808056
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 318.27023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847713, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 239.88466
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847725, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735380836581847727, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5417224100340165888, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Name
       value: Player&Mechanic

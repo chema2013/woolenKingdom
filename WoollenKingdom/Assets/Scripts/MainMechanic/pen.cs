@@ -79,7 +79,6 @@ public class pen : MonoBehaviour
             }
 
             DotController dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent).GetComponent<DotController>();
-            dot.OnDragEvent += MoveDot;
             dot.OnRightClickEvent += RemoveDot;
 
                 if (i == 1)
@@ -146,10 +145,6 @@ public class pen : MonoBehaviour
         for(int i = 0; i < after.Count; i++) {
             afterLine.AddPoint(after[i]);
         }
-    }
-
-    private void MoveDot(DotController dot) {
-        dot.transform.position = GetMousePosition();
     }
 
     // Update is called once per frame
