@@ -120,7 +120,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -46, y: -37.5}
+        - {x: -46, y: 24.5}
+        - {x: 19, y: 56.5}
+        - {x: 50, y: 41.5}
+        - {x: 50, y: -13.5}
+        - {x: -15, y: -55.5}
       tessellationDetail: 0
       bones: []
       spriteID: 091ad0753faf34c60800000000000000
@@ -141,7 +147,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -49, y: -38}
+        - {x: -49, y: 25}
+        - {x: 16, y: 55}
+        - {x: 46, y: 40}
+        - {x: 46, y: -21}
+        - {x: -19, y: -55}
       tessellationDetail: 0
       bones: []
       spriteID: ae2c847f927ad3a50800000000000000
@@ -162,7 +174,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 18, y: -56}
+        - {x: -45, y: -21}
+        - {x: -45, y: 42}
+        - {x: -12, y: 56}
+        - {x: 50, y: 25}
+        - {x: 50, y: -39}
       tessellationDetail: 0
       bones: []
       spriteID: b8f9e3e5775b67e10800000000000000
@@ -183,53 +201,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 16.5, y: -56.5}
+        - {x: -46.5, y: -16.5}
+        - {x: -46.5, y: 42.5}
+        - {x: -13.5, y: 55.5}
+        - {x: 48.5, y: 24.5}
+        - {x: 48.5, y: -37.5}
       tessellationDetail: 0
       bones: []
       spriteID: 40af5cf9d6b041990800000000000000
       internalID: -7416290120912471548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: housewallsegments_doorwindow_spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 0
-        width: 26
-        height: 57
-      alignment: 9
-      pivot: {x: 0.5, y: 0.97053754}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1407d614b32ae1020800000000000000
-      internalID: 2314465633899475009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: housewallsegments_doorwindow_spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 57
-        width: 15
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22fb2d651a579f330800000000000000
-      internalID: 3745153900942114594
       vertices: []
       indices: 
       edges: []
