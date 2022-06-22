@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 960444246433917040}
   - component: {fileID: 960444246433917047}
   - component: {fileID: 177582181011025005}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: DotPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
