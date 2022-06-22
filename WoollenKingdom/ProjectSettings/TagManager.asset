@@ -8,6 +8,7 @@ TagManager:
   - line
   - startDot
   - endDot
+  - complete
   layers:
   - Default
   - TransparentFX
