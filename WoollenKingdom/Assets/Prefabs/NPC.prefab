@@ -177,7 +177,7 @@ SpriteRenderer:
   m_SortingLayerID: -117552511
   m_SortingLayer: 6
   m_SortingOrder: 8
-  m_Sprite: {fileID: 1582584671278653710, guid: f08cd4814c1b0574290179f073761393, type: 3}
+  m_Sprite: {fileID: -2256948484998397059, guid: 782243374311125499f0eb1970d2d366, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -221,7 +221,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.25, y: 2.1875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -248,3 +248,4 @@ MonoBehaviour:
   - Hey there!
   - I don't believe I've introduced myself.
   - But now I'm finally able to do so!
+  buttonPrompt: {fileID: 0}
