@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class IsoPlayerMovement : MonoBehaviour
 {
+    #region General Movement
     float horizontalMovement;
     float verticalMovement;
     public Rigidbody2D rb;
     public float speed = 2f;
     Vector2 movement;
     public bool canMove = true;
+    #endregion
 
     public GameObject textBox;
 
@@ -37,9 +40,11 @@ public class IsoPlayerMovement : MonoBehaviour
     float idleTime;
     #endregion
 
+    #region Wool
     public static int wool;
-
-    public Text woolText;
+    //public Text woolText;
+    public TMP_Text woolTextPro;
+    #endregion
 
     void Awake()
     {
@@ -105,7 +110,7 @@ public class IsoPlayerMovement : MonoBehaviour
         }
         #endregion
 
-        woolText.text = "Wool Supply:" + wool.ToString();
+        woolTextPro.text = "Wool Supply: " + wool.ToString();
     }
 
     void FixedUpdate()
