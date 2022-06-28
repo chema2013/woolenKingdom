@@ -80,6 +80,7 @@ public class pen : MonoBehaviour
 
             DotController dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent).GetComponent<DotController>();
             dot.OnRightClickEvent += RemoveDot;
+            dot.OnLeftClickEvent += CompleteLine;
 
                 if (i == 1)
                 {
@@ -126,6 +127,26 @@ public class pen : MonoBehaviour
             IsoPlayerMovement.wool -= 1;
     }
 
+    private void CompleteLine(DotController dot) {
+        LineController line=dot.line;
+        
+        if(currentLine != null){
+
+            //completes the shape the player is drawing
+            currentLine.ToggleLoop();
+
+            //they can no longer add more lines to the shape they created
+            currentLine = null;
+
+            this.GetComponent<PolygonCollider2D>().enabled = true;
+
+            this.GetComponent<PolygonCollider2D>().points = new[]{point1,point2,point3,point4,point5,point6};
+
+            i = 1;
+
+            IsoPlayerMovement.wool -= 1;
+        }
+    }
    
     private void RemoveDot(DotController dot) {
         LineController line=dot.line;
