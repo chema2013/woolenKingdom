@@ -22,7 +22,7 @@ public class changeSprite : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D col)
     {
-        if (col.gameObject.tag == "complete")
+        if (col.gameObject.tag == "minigame")
         {
             complete.SetActive(true);
 
