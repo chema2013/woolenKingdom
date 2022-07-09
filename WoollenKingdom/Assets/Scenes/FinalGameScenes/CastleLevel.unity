@@ -399,6 +399,9 @@ MonoBehaviour:
   - I know how much you enjoyed knitting with me. But I was never good enough.
   - I could never finish what I started. I am not complete.
   - Please, my dear. Leave me be. You deserve better.
+  - ...
+  - What am I thinking? Something isn't right. I don't feel right.
+  - My dear, I hate to say this. But please help me. Can you do that for me?
   buttonPrompt: {fileID: 2046207983}
 --- !u!114 &748142261
 MonoBehaviour:
@@ -422,7 +425,7 @@ MonoBehaviour:
     I felt so incomplete.
   - But I have you. To complete me.
   - Oh my sweet. Let's go home.
-  - Let's knit together, shall we?
+  - Why don't we sit down together and knit, like we used to.
   buttonPrompt: {fileID: 2046207983}
 --- !u!114 &748142262
 MonoBehaviour:
