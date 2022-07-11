@@ -14,6 +14,10 @@ public class DialogueBehaviour : MonoBehaviour
     bool playerIsClose;
     public GameObject buttonPrompt;
 
+    public static bool textEnd;
+
+    public static int nextText;
+
     void Start()
     {
         ResetText();
@@ -66,6 +70,13 @@ public class DialogueBehaviour : MonoBehaviour
         else
         {
             ResetText();
+
+            textEnd = true;
+
+            nextText += 1;
+
+            Debug.Log("current text index" + nextText);
+
         }
     }
 

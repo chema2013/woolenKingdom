@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/FinalGameScenes/Cutscene.unity
-    guid: c6301d6e0a0d0f341ae79ba624f10142
+    path: Assets/Scenes/FinalGameScenes/cinematic.unity
+    guid: 37882fdcf70614c43b140b2b402571a0
   - enabled: 1
     path: Assets/Scenes/FinalGameScenes/Intro.unity
     guid: 0ac44489ec8091346bebadcb57953f81
