@@ -25,6 +25,7 @@ public class changeSprite : MonoBehaviour
         if (col.gameObject.tag == "minigame")
         {
             complete.SetActive(true);
+            DialogueBehaviour.nextText += 1;
 
             Debug.Log("fixed npc");
             unfinished.SetActive(false);

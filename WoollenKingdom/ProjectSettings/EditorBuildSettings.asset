@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalGameScenes/CastleLevel.unity
     guid: d379ccdb5fa6f2749b483f143473717b
+  - enabled: 1
+    path: Assets/Scenes/FinalGameScenes/Ending.unity
+    guid: 5b969f0c61e6985409fdc0519da17cb5
   m_configObjects: {}

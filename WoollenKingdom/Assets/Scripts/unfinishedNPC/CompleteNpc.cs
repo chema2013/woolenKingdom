@@ -15,7 +15,7 @@ public class CompleteNpc : MonoBehaviour
 
     public GameObject player;
 
-    public bool minigame = false;
+    public static bool minigame = false;
 
     public GameObject drawingNPC;
 
@@ -31,7 +31,7 @@ public class CompleteNpc : MonoBehaviour
         if (playerIsClose && Input.GetKeyDown(KeyCode.E) && minigame == false)
         {
             buttonPrompt.gameObject.SetActive(false);
-            camera.GetComponent<Camera>().orthographicSize = zoomSize - 4;
+            camera.GetComponent<Camera>().orthographicSize = zoomSize - 3.5f;
             player.GetComponent<SpriteRenderer>().enabled = false;
             minigame = true;
             player.GetComponent<IsoPlayerMovement>().enabled = false;
