@@ -78,6 +78,8 @@ public class pen : MonoBehaviour
 
             }
 
+            Debug.Log("dot");
+
             DotController dot = Instantiate(dotPrefab, GetMousePosition(), Quaternion.identity, dotParent).GetComponent<DotController>();
             dot.OnRightClickEvent += RemoveDot;
             dot.OnLeftClickEvent += CompleteLine;
