@@ -536,8 +536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19b1c9007b8e864ab09d874d02c81de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBox: {fileID: 0}
-  dialogueText: {fileID: 0}
+  textBox: {fileID: 960253960}
+  dialogueText: {fileID: 1204254880}
   dialogue:
   - GAHH!!
   - DON'T TOUCH ME!
@@ -563,8 +563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19b1c9007b8e864ab09d874d02c81de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textBox: {fileID: 0}
-  dialogueText: {fileID: 0}
+  textBox: {fileID: 960253960}
+  dialogueText: {fileID: 1204254880}
   dialogue:
   - ...
   - I... I feel better.
@@ -4144,6 +4144,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1400190081, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1400190082, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.8299994
@@ -4398,11 +4402,11 @@ PrefabInstance:
       objectReference: {fileID: 960253960}
     - target: {fileID: 3735380836465145462, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2
+      value: -10.36
       objectReference: {fileID: 0}
     - target: {fileID: 3735380836465145462, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7
+      value: -6.83
       objectReference: {fileID: 0}
     - target: {fileID: 5417224100340165888, guid: e7597b562b2ddd145804b2bd534fb7f4, type: 3}
       propertyPath: m_Name
@@ -4431,19 +4435,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: m_Size.x
-      value: 6.068067
+      value: 3.8303673
       objectReference: {fileID: 0}
     - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: m_Size.y
-      value: 5.9162436
+      value: 4.154909
       objectReference: {fileID: 0}
     - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: m_Offset.x
-      value: -0.06625199
+      value: -0.02021563
       objectReference: {fileID: 0}
     - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: m_Offset.y
-      value: 0.21643579
+      value: 0.5526905
       objectReference: {fileID: 0}
     - target: {fileID: 7068750110447145672, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: m_Sprite
