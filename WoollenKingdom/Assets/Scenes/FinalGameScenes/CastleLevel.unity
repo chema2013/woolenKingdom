@@ -1861,6 +1861,8 @@ MonoBehaviour:
   introDialogue: {fileID: 748142265}
   afterPlayerTriesToFix1Dialogue: {fileID: 748142260}
   afterPlayerFixesDialogue: {fileID: 748142261}
+  motherBroken: {fileID: 7953748887873995520, guid: 93209d8d37ce0c84a88d80d23b3e24fc, type: 3}
+  motherFixed: {fileID: 1759935891952049340, guid: 93209d8d37ce0c84a88d80d23b3e24fc, type: 3}
 --- !u!114 &748142265 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7068750110447145674, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
@@ -9715,10 +9717,26 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.5526905
       objectReference: {fileID: 0}
+    - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.46875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7068750110447145670, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.640625
+      objectReference: {fileID: 0}
     - target: {fileID: 7068750110447145672, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2938968616035752627, guid: 782243374311125499f0eb1970d2d366, type: 3}
+      objectReference: {fileID: 7953748887873995520, guid: 93209d8d37ce0c84a88d80d23b3e24fc, type: 3}
     - target: {fileID: 7068750110447145673, guid: b714ff7d863c3494aa36071bd4d8d613, type: 3}
       propertyPath: m_RootOrder
       value: 1

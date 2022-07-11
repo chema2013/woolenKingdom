@@ -6,12 +6,16 @@ public class MotherDialogueManager : MonoBehaviour
 {
     int nextDialogue = DialogueBehaviour.nextText;
     public DialogueBehaviour introDialogue, afterPlayerTriesToFix1Dialogue, afterPlayerFixesDialogue;
+    SpriteRenderer sr;
+    public Sprite motherBroken, motherFixed;
     void Start()
     {
         introDialogue.enabled = true;
         afterPlayerTriesToFix1Dialogue.enabled = false;
         afterPlayerFixesDialogue.enabled = false;
         nextDialogue = 0;
+        sr = GetComponent<SpriteRenderer>();
+        sr.sprite = motherBroken;
         Debug.Log("dialogue index" + DialogueBehaviour.nextText);
     }
 
@@ -25,6 +29,7 @@ public class MotherDialogueManager : MonoBehaviour
             introDialogue.enabled = false;
             afterPlayerTriesToFix1Dialogue.enabled = true;
             afterPlayerFixesDialogue.enabled = false;
+            sr.sprite = motherBroken;
         }
         if(DialogueBehaviour.nextText == 2)
         {
@@ -34,6 +39,7 @@ public class MotherDialogueManager : MonoBehaviour
             introDialogue.enabled = false;
             afterPlayerTriesToFix1Dialogue.enabled = false;
             afterPlayerFixesDialogue.enabled = true;
+            sr.sprite = motherFixed;
         }
 
     }
